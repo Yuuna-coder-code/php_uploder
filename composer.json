@@ -1,0 +1,11 @@
+{
+  "name": "zitod/php-uploader",
+  "description": "Chunked PHP uploader for Railway deployment",
+  "type": "project",
+  "require": {
+    "php": "^8.0",
+    "ext-curl": "*",
+    "ext-fileinfo": "*",
+    "ext-json": "*"
+  }
+}
