@@ -147,7 +147,7 @@ function resolve_managed_file_path($filePath)
     return join_path(UPLOAD_DIR, str_replace('/', DIRECTORY_SEPARATOR, $relativePath));
 }
 
-define('SPRING_BOOT_API_URL', env_value('SPRING_BOOT_API_URL', 'http://localhost:8080/api/attachment/php-upload'));
+define('SPRING_BOOT_API_URL', env_value('SPRING_BOOT_API_URL', 'https://zitod-backend-new.onrender.com/api/attachment/php-upload'));
 define('PHP_ROOT_URL', get_public_base_url());
 define('STORAGE_ROOT', get_storage_root());
 define('UPLOAD_DIR', join_path(STORAGE_ROOT, 'files'));
