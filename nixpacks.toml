@@ -1,0 +1,8 @@
+[phase.setup]
+nixPkgs = ['php']
+
+[phase.build]
+cmds = ['mkdir -p uploads', 'chmod -R 777 uploads']
+
+[phase.start]
+cmd = 'php -S 0.0.0.0:$PORT -t .'
