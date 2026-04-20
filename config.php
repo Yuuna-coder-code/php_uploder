@@ -42,7 +42,7 @@ function get_allowed_origins()
     $origins = array_filter(array_map('trim', explode(',', env_value('ALLOWED_ORIGINS', 'https://zitod-admin-front-2.vercel.app'))));
 
     if (empty($origins)) {
-        return ['https://zitod-admin-front-2.vercel.app','http://localhost:5173',];
+        return ['https://zitod-admin-front-2.vercel.app','https://vercel.com/musal/my-project',];
     }
 
     return $origins;
